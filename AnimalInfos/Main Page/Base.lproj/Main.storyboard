@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W8W-7J-MCD">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalInfos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJa-L5-Z5Q">
+                                <rect key="frame" x="0.0" y="103" width="393" height="963"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYm-UU-hWN">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIi-7U-CXa" customClass="AnimalView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="40" width="160" height="220"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheetah" highlightedImage="cheetah" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-vt-Evb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="220"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="220" id="Tdo-Po-s2o"/>
+                                                            <constraint firstAttribute="width" constant="160" id="azP-Hs-zjL"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="GqM-vt-Evb" firstAttribute="centerY" secondItem="YIi-7U-CXa" secondAttribute="centerY" id="C3p-O9-mAH"/>
+                                                    <constraint firstAttribute="height" constant="220" id="SDh-I3-p8N"/>
+                                                    <constraint firstItem="GqM-vt-Evb" firstAttribute="centerX" secondItem="YIi-7U-CXa" secondAttribute="centerX" id="a9G-Pl-TGG"/>
+                                                    <constraint firstAttribute="width" constant="160" id="rci-7X-K5S"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQZ-98-jMl" customClass="AnimalView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="272" width="160" height="220"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="VtX-Xd-JsK"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="fsT-Gc-v64"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="gjF-eb-fWC"/>
+                                                    <constraint firstAttribute="height" constant="220" id="zqn-Wy-KG1"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aml-QN-gTU" customClass="AnimalView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="209" y="40" width="160" height="220"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="8Ow-Hh-c3c"/>
+                                                    <constraint firstAttribute="height" constant="220" id="aYt-fA-uu3"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wzo-nv-b8v" customClass="AnimalView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="209" y="272" width="160" height="220"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="Gcz-hO-rKf"/>
+                                                    <constraint firstAttribute="height" constant="220" id="MDJ-ar-Xey"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="WIV-RN-82N"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="oub-Zc-vMn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SzI-qx-JPb" customClass="AnimalView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="504" width="160" height="220"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="0ar-GI-yLg"/>
+                                                    <constraint firstAttribute="height" constant="220" id="FmO-di-pSw"/>
+                                                    <constraint firstAttribute="width" constant="160" id="lFq-Cb-YuE"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="orw-LO-S0j"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I56-sj-fb7" customClass="AnimalView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="736" width="160" height="220"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="220" id="0l9-OF-gd4"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="Gnu-uh-gNE"/>
+                                                    <constraint firstAttribute="width" constant="160" id="Lmx-jC-8tP"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="160" id="P61-6w-7Uj"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="c88-kJ-9dQ"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="220" id="nMc-MA-iaU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNL-ks-nSK" customClass="AnimalView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="209" y="504" width="160" height="220"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="M96-gF-560"/>
+                                                    <constraint firstAttribute="height" constant="220" id="QCb-hi-L0f"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="maG-9c-av6"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="t3c-HS-9zd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m97-ii-tgC" customClass="AnimalView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="209" y="736" width="160" height="220"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="3V3-5p-V21"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="220" id="AVl-em-LM9"/>
+                                                    <constraint firstAttribute="width" constant="160" id="GHF-fw-kYD"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Uic-Cn-oAE"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="160" id="j3l-0b-0ou"/>
+                                                    <constraint firstAttribute="height" constant="220" id="rFe-UY-JDT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="SzI-qx-JPb" firstAttribute="leading" secondItem="sYm-UU-hWN" secondAttribute="leading" constant="24" id="0IJ-DZ-eL2"/>
+                                            <constraint firstItem="YIi-7U-CXa" firstAttribute="top" secondItem="sYm-UU-hWN" secondAttribute="top" constant="40" id="5Dy-IJ-Txm"/>
+                                            <constraint firstItem="m97-ii-tgC" firstAttribute="top" secondItem="lNL-ks-nSK" secondAttribute="bottom" constant="12" id="7AT-U4-RvY"/>
+                                            <constraint firstItem="Wzo-nv-b8v" firstAttribute="top" secondItem="aml-QN-gTU" secondAttribute="bottom" constant="12" id="Alk-nX-Tp7"/>
+                                            <constraint firstItem="PQZ-98-jMl" firstAttribute="top" secondItem="YIi-7U-CXa" secondAttribute="bottom" constant="12" id="ApV-e5-ONV"/>
+                                            <constraint firstItem="lNL-ks-nSK" firstAttribute="top" secondItem="Wzo-nv-b8v" secondAttribute="bottom" constant="12" id="C1e-9r-RyL"/>
+                                            <constraint firstItem="YIi-7U-CXa" firstAttribute="leading" secondItem="sYm-UU-hWN" secondAttribute="leading" constant="24" id="Fnc-Kh-11q"/>
+                                            <constraint firstAttribute="trailing" secondItem="lNL-ks-nSK" secondAttribute="trailing" constant="24" id="FsN-gF-hYZ"/>
+                                            <constraint firstItem="aml-QN-gTU" firstAttribute="top" secondItem="sYm-UU-hWN" secondAttribute="top" constant="40" id="K4L-Ft-VnY"/>
+                                            <constraint firstAttribute="height" constant="1000" id="NBf-FR-OF3"/>
+                                            <constraint firstItem="I56-sj-fb7" firstAttribute="top" secondItem="SzI-qx-JPb" secondAttribute="bottom" constant="12" id="NNv-nR-9n0"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wzo-nv-b8v" secondAttribute="trailing" constant="24" id="PcL-tR-cOw"/>
+                                            <constraint firstItem="I56-sj-fb7" firstAttribute="top" secondItem="SzI-qx-JPb" secondAttribute="bottom" constant="12" id="e6F-BD-50n"/>
+                                            <constraint firstItem="PQZ-98-jMl" firstAttribute="leading" secondItem="sYm-UU-hWN" secondAttribute="leading" constant="24" id="gBH-Tu-1D3"/>
+                                            <constraint firstItem="SzI-qx-JPb" firstAttribute="top" secondItem="PQZ-98-jMl" secondAttribute="bottom" constant="12" id="icW-AO-EId"/>
+                                            <constraint firstAttribute="trailing" secondItem="m97-ii-tgC" secondAttribute="trailing" constant="24" id="mXT-nj-bdP"/>
+                                            <constraint firstItem="m97-ii-tgC" firstAttribute="top" secondItem="lNL-ks-nSK" secondAttribute="bottom" constant="12" id="pS8-AP-NiV"/>
+                                            <constraint firstAttribute="trailing" secondItem="aml-QN-gTU" secondAttribute="trailing" constant="24" id="qs2-Tj-mdk"/>
+                                            <constraint firstItem="I56-sj-fb7" firstAttribute="leading" secondItem="sYm-UU-hWN" secondAttribute="leading" constant="24" id="yx9-SA-nef"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sYm-UU-hWN" secondAttribute="bottom" id="Fis-uR-XLr"/>
+                                    <constraint firstItem="sYm-UU-hWN" firstAttribute="leading" secondItem="iJa-L5-Z5Q" secondAttribute="leading" id="S5t-9D-M1i"/>
+                                    <constraint firstAttribute="trailing" secondItem="sYm-UU-hWN" secondAttribute="trailing" id="SNW-e1-hex"/>
+                                    <constraint firstItem="sYm-UU-hWN" firstAttribute="top" secondItem="iJa-L5-Z5Q" secondAttribute="top" id="nHq-oh-ohL"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iJa-L5-Z5Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ExT-k5-ZeT"/>
+                            <constraint firstItem="iJa-L5-Z5Q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hdk-a7-i6L"/>
+                            <constraint firstItem="iJa-L5-Z5Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XB0-EL-ski"/>
+                            <constraint firstItem="sYm-UU-hWN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bQ7-sN-7Dv"/>
+                            <constraint firstItem="iJa-L5-Z5Q" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oI2-PC-jlf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LmH-yo-yTh"/>
+                    <size key="freeformSize" width="393" height="1100"/>
+                    <connections>
+                        <outlet property="cheetahView" destination="YIi-7U-CXa" id="DsD-uO-cku"/>
+                        <outlet property="elephantView" destination="PQZ-98-jMl" id="Z4f-X7-Ff4"/>
+                        <outlet property="giraffeView" destination="aml-QN-gTU" id="biR-08-DvC"/>
+                        <outlet property="gorillaView" destination="Wzo-nv-b8v" id="e7D-oW-nO4"/>
+                        <outlet property="hippoView" destination="SzI-qx-JPb" id="Lzb-fw-gq5"/>
+                        <outlet property="lionView" destination="I56-sj-fb7" id="eJd-By-OI6"/>
+                        <outlet property="ostrichView" destination="lNL-ks-nSK" id="tcy-tH-pKD"/>
+                        <outlet property="zebraView" destination="m97-ii-tgC" id="u6o-8a-5b0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918.32061068702285" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ugj-db-zaR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W8W-7J-MCD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N5Q-Bb-qXo">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="geG-VN-nwa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xch-eh-SI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8.3969465648854964" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cheetah" width="2560" height="1600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
